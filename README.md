@@ -1,146 +1,211 @@
-# Agentic AI Examples
+# Agentic Process Automation Class
 
-This repository contains a collection of Python scripts demonstrating various implementations of AI agents and tools using LangChain, OpenAI GPT models, and other APIs.
+Welcome to the **Agentic Process Automation Class** repository! This comprehensive collection contains tutorials and examples for building AI agents that can automate processes using LangGraph, LangChain, and various LLM providers.
 
-## 🚀 Features
+## 🚀 What You'll Learn
 
-- Interactive AI Assistant with Weather and Wikipedia capabilities
-- DuckDuckGo Search Integration
-- Custom AI Agents with Memory
-- Weather API Integration
-- Wikipedia Information Retrieval
-- Conversational Memory
-- Custom Tool Creation
+This repository provides step-by-step tutorials covering:
+
+- **Process automation fundamentals** - Understanding how AI agents can automate workflows
+- **Agent architectures** - Building ReAct agents, chatbots, and tool-using agents  
+- **Memory and persistence** - Creating agents that remember context across sessions
+- **Web search integration** - Using Tavily for AI-powered information gathering
+- **Multi-LLM support** - Working with OpenAI, Groq, and other providers
+- **Real-world automation** - Practical examples for process automation scenarios
+
+## 📁 Repository Structure
+
+```
+agentic-process-automation-class/
+├── script_01.py          # Basic LangGraph introduction
+├── script_02.py          # Weather & Wikipedia assistant with function calling
+├── script_03.py          # ReAct agent with custom tools
+├── script_04.py          # DuckDuckGo search integration
+├── script_05.py          # Advanced AI agent with memory and multiple tools
+├── script_06.py          # Chatbot + ReAct agent demos (Groq/OpenAI)
+├── script_07.py          # Tavily search integration for web research
+├── script_08.py          # Persistent chatbot with conversation threads
+├── tutorial_02.md        # Weather & Wikipedia tutorial
+├── tutorial_03.md        # ReAct agent tutorial
+├── tutorial_05.md        # Advanced agent tutorial
+├── tutorial_06.md        # LangGraph chatbot and ReAct tutorial
+├── tutorial_07.md        # Tavily search tutorial
+├── tutorial_08.md        # Persistent memory tutorial
+├── requirements.txt      # Python dependencies
+├── .env.sample          # Environment variables template
+├── .gitignore           # Git ignore configuration
+└── README.md            # This file
+```
 
 ## 📋 Prerequisites
 
-```bash
-python 3.9+
-pip
-```
+- Python 3.9+
+- pip package manager
+- API keys for:
+  - OpenAI (required for most scripts)
+  - Groq (optional, for alternative LLM)
+  - Tavily (for web search functionality)
+  - SerpAPI (for Google search integration)
 
 ## 🛠 Installation
 
-1. Clone the repository:
+1. **Clone the repository:**
 ```bash
-git clone <repository-url>
-cd agenticai
+git clone https://github.com/datatweets/agentic-process-automation-class.git
+cd agentic-process-automation-class
 ```
 
-2. Create a virtual environment:
+2. **Create a virtual environment:**
 ```bash
 python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 ```
 
-3. Install dependencies:
+3. **Install dependencies:**
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Create a `.env` file in the root directory with your API keys:
-```plaintext
-OPENAI_API_KEY=your_openai_api_key
-SERPAPI_API_KEY=your_serpapi_api_key
+4. **Set up environment variables:**
+```bash
+cp .env.sample .env
+# Edit .env and add your API keys
 ```
 
-## 📁 Project Structure
+## 🔧 Environment Setup
 
-- `script_01.py` - Initial setup and basic configuration
-- `script_02.py` - Weather and Wikipedia information retrieval using OpenAI functions
-- `script_03.py` - Additional functionalities
-- `script_04.py` - DuckDuckGo search integration
-- `script_05.py` - Advanced AI agent with custom tools and memory
+Create a `.env` file with your API keys:
 
-## 🔍 Scripts Overview
+```plaintext
+# Required for most scripts
+OPENAI_API_KEY=your_openai_api_key_here
+
+# Optional: Alternative LLM provider
+GROQ_API_KEY=your_groq_api_key_here
+
+# For web search functionality (script_07.py)
+TAVILY_API_KEY=your_tavily_api_key_here
+
+# For Google search (script_05.py)
+SERPAPI_API_KEY=your_serpapi_api_key_here
+```
+
+## 📚 Script Descriptions
+
+### script_01.py - Basic LangGraph Introduction
+Basic setup and LangGraph fundamentals.
 
 ### script_02.py - Weather & Wikipedia Assistant
-- Uses OpenAI's function calling feature
-- Integrates with weather API and Wikipedia
-- Interactive command-line interface
+- OpenAI function calling
+- Weather API integration
+- Wikipedia information retrieval
+- **Tutorial:** `tutorial_02.md`
 
-### script_04.py - DuckDuckGo Search
-- Implements DuckDuckGo search functionality
-- Uses LangChain for query optimization
-- Includes retry strategies and error handling
+### script_03.py - ReAct Agent with Tools
+- ReAct (Reasoning + Acting) pattern
+- Custom tool creation
+- Agent decision-making
+- **Tutorial:** `tutorial_03.md`
 
-### script_05.py - Advanced AI Agent
-Features:
+### script_04.py - DuckDuckGo Search Integration
+- Web search capabilities
+- Query optimization
+- Error handling and retries
+
+### script_05.py - Advanced Multi-Tool Agent
 - Google Search via SerpAPI
-- LLM Math capabilities
-- Custom time tool
+- Math calculations
+- Time utilities
 - Conversational memory
-- Interactive chat interface
+- **Tutorial:** `tutorial_05.md`
 
-## 🚀 Usage
+### script_06.py - Chatbot & ReAct Demos
+- Simple StateGraph chatbot
+- Prebuilt ReAct agent
+- Multi-LLM support (OpenAI/Groq)
+- **Tutorial:** `tutorial_06.md`
 
-### Weather & Wikipedia Assistant (script_02.py)
+### script_07.py - Tavily Web Search
+- Direct Q&A with web search
+- Structured search results
+- Intelligent search agents
+- **Tutorial:** `tutorial_07.md`
+
+### script_08.py - Persistent Memory Chatbot
+- Conversation persistence
+- Thread-based memory isolation
+- Multi-user support
+- **Tutorial:** `tutorial_08.md`
+
+## 🚀 Quick Start
+
+1. **Basic chatbot (script_06.py):**
 ```bash
-python script_02.py
-# Example queries:
-# "What's the weather in Paris?"
-# "Tell me about quantum physics"
+python script_06.py chat
 ```
 
-### DuckDuckGo Search (script_04.py)
+2. **Web search agent (script_07.py):**
 ```bash
-python script_04.py
-# Enter your search query when prompted
+python script_07.py
 ```
 
-### AI Agent with Memory (script_05.py)
+3. **Persistent memory bot (script_08.py):**
 ```bash
-python script_05.py
-# Example queries:
-# "What year was Einstein born? What is that year multiplied by 5?"
-# "What time is it?"
-# "Suggest Thai food recipes"
+python script_08.py
 ```
 
-## 📚 API Documentation
+## 🔍 Example Use Cases
 
-### Weather API
-- Uses Open-Meteo API for weather data
-- Endpoint: https://api.open-meteo.com/v1/forecast
-- Free to use, no API key required
+### Customer Support Automation
+Use persistent memory chatbots to handle customer inquiries with context retention.
 
-### Wikipedia API
-- Uses MediaWiki API for Wikipedia information
-- Endpoint: https://en.wikipedia.org/w/api.php
-- Free to use, no API key required
+### Research Automation
+Combine web search with ReAct agents for automated research tasks.
 
-### Search APIs
-- DuckDuckGo API (script_04.py)
-- SerpAPI (script_05.py, requires API key)
+### Data Collection
+Build agents that can search, extract, and process information from multiple sources.
 
-## ⚙️ Configuration
+### Workflow Orchestration
+Create multi-step automation workflows using LangGraph's state management.
 
-The project uses environment variables for configuration. Create a `.env` file with:
+## 📖 Learning Path
 
-```plaintext
-OPENAI_API_KEY=your_openai_api_key
-SERPAPI_API_KEY=your_serpapi_api_key  # Only needed for script_05.py
-```
+1. **Start with basics:** `script_01.py` → `tutorial_02.md`
+2. **Learn ReAct pattern:** `script_03.py` → `tutorial_03.md`
+3. **Add complexity:** `script_05.py` → `tutorial_05.md`
+4. **Explore LangGraph:** `script_06.py` → `tutorial_06.md`
+5. **Web integration:** `script_07.py` → `tutorial_07.md`
+6. **Persistence:** `script_08.py` → `tutorial_08.md`
 
 ## 🤝 Contributing
 
 1. Fork the repository
-2. Create your feature branch
-3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 ## 📝 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 📮 Contact
-
-For questions and support, please open an issue in the repository.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
-- OpenAI for their GPT models
-- LangChain for their framework
-- Open-Meteo for weather data
-- Wikipedia for information access
+- **LangChain & LangGraph** - For the agent framework
+- **OpenAI** - For GPT models and APIs
+- **Groq** - For fast open-source model inference
+- **Tavily** - For AI-optimized web search
+- **Open-Meteo** - For weather data API
+
+## 📮 Support
+
+For questions, issues, or contributions:
+- Open an issue in this repository
+- Check existing tutorials for guidance
+- Review the comprehensive documentation in each tutorial
+
+---
+
+**Happy Learning! 🚀**
+
+Start building intelligent process automation with AI agents today!
