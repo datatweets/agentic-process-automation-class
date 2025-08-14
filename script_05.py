@@ -63,7 +63,7 @@ if __name__ == "__main__":
 
     # Slide 64 idea: memory across turns
     print(
-        agent.run("Suggest a few Thai food recipes and remember that I like Thai food.")
+        agent.run("Use SerpAPI to Suggest a few Thai food recipes and remember that I like Thai food and using SerpAPI.")
     )
     print(agent.run("Which one of those dishes is the spiciest?"))
     print(agent.run("Give me a grocery shopping list to make that dish."))

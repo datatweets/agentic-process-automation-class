@@ -52,7 +52,7 @@ args = json.loads(tool_call.function.arguments)  # safer parsing
 
 # Step 3: Run the function locally
 function_result = get_current_time(**args)
-
+print(function_result)
 # Step 4: Send result back to model for natural language reply
 final_response = client.chat.completions.create(
     model="gpt-4o-mini",
