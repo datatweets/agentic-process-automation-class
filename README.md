@@ -170,7 +170,7 @@ Create multi-step automation workflows using LangGraph's state management.
 
 ## 📖 Learning Path
 
-1. **Start with basics:** `script_01.py` → `tutorial_02.md`
+1. **Start with basics:** `script_02.py` → `tutorial_02.md`
 2. **Learn ReAct pattern:** `script_03.py` → `tutorial_03.md`
 3. **Add complexity:** `script_05.py` → `tutorial_05.md`
 4. **Explore LangGraph:** `script_06.py` → `tutorial_06.md`
