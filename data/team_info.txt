@@ -1,0 +1,25 @@
+
+            Our Team
+            ========
+            
+            TechCorp has a diverse team of 50+ professionals:
+            
+            Engineering Team:
+            - 20 Software Engineers (Python, JavaScript, Java)
+            - 8 AI/ML Engineers (TensorFlow, PyTorch)
+            - 5 DevOps Engineers (AWS, Docker, Kubernetes)
+            
+            Design Team:
+            - 6 UX/UI Designers
+            - 3 Graphic Designers
+            
+            Business Team:
+            - 4 Project Managers
+            - 3 Business Analysts
+            - 2 Sales Representatives
+            
+            Leadership:
+            - CEO: Sarah Johnson (15 years experience)
+            - CTO: Michael Chen (12 years experience)
+            - Head of Design: Emma Rodriguez (10 years experience)
+            

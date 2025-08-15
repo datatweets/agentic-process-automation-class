@@ -1,0 +1,25 @@
+
+            TECHCORP API DOCUMENTATION
+            =========================
+            
+            AUTHENTICATION:
+            All API requests must include an Authorization header with a valid Bearer token.
+            Tokens expire after 24 hours and must be refreshed.
+            
+            RATE LIMITING:
+            Free tier: 100 requests per hour
+            Pro tier: 1000 requests per hour
+            Enterprise tier: Unlimited requests
+            
+            ERROR CODES:
+            200 - Success
+            401 - Unauthorized (invalid or expired token)
+            429 - Rate limit exceeded
+            500 - Internal server error
+            
+            ENDPOINTS:
+            GET /api/users - Retrieve user information
+            POST /api/data - Submit new data
+            PUT /api/data/{id} - Update existing data
+            DELETE /api/data/{id} - Delete data
+            

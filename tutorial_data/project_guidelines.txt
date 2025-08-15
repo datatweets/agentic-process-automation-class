@@ -1,0 +1,19 @@
+
+            PROJECT MANAGEMENT GUIDELINES
+            ============================
+            
+            SPRINT PLANNING:
+            Sprints are 2 weeks long and begin every other Monday.
+            Sprint planning meetings occur on the Friday before each sprint.
+            All team members must attend sprint planning meetings.
+            
+            CODE REVIEW PROCESS:
+            All code must be reviewed by at least one senior developer.
+            Pull requests should be submitted at least 24 hours before deployment.
+            Code reviews should focus on functionality, security, and maintainability.
+            
+            TESTING REQUIREMENTS:
+            Unit tests must cover at least 80% of the codebase.
+            Integration tests are required for all API endpoints.
+            Manual testing must be performed before production deployment.
+            

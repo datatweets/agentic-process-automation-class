@@ -1,0 +1,20 @@
+
+            About Our Company
+            =================
+            
+            TechCorp is a leading software development company founded in 2010.
+            We specialize in AI solutions, web development, and mobile applications.
+            
+            Our mission is to make technology accessible to everyone through 
+            innovative and user-friendly solutions.
+            
+            Key Services:
+            - Artificial Intelligence consulting
+            - Custom web application development  
+            - Mobile app development (iOS and Android)
+            - Cloud infrastructure setup
+            - Data analytics and visualization
+            
+            We have successfully completed over 500 projects for clients 
+            ranging from startups to Fortune 500 companies.
+            
